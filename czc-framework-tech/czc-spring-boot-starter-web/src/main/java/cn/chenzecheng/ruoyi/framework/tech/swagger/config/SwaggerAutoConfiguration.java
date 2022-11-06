@@ -34,7 +34,7 @@ import static springfox.documentation.builders.RequestHandlerSelectors.basePacka
 @EnableKnife4j
 @ConditionalOnClass({Docket.class, ApiInfoBuilder.class})
 // 允许使用 swagger.enable=false 禁用 Swagger
-@ConditionalOnProperty(prefix = "yudao.swagger", value = "enable", matchIfMissing = true)
+@ConditionalOnProperty(prefix = "czc.swagger", value = "enable", matchIfMissing = true)
 @EnableConfigurationProperties(SwaggerProperties.class)
 public class SwaggerAutoConfiguration {
 

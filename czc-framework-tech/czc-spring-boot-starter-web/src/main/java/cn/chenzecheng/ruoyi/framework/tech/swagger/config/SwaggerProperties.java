@@ -10,7 +10,7 @@ import javax.validation.constraints.NotEmpty;
  *
  * @author 芋道源码
  */
-@ConfigurationProperties("yudao.swagger")
+@ConfigurationProperties("czc.swagger")
 @Data
 public class SwaggerProperties {
 
