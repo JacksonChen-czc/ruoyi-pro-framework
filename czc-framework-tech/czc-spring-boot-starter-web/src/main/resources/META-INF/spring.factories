@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.chenzecheng.ruoyi.framework.tech.apilog.config.ApiLogAutoConfiguration,\
+  cn.chenzecheng.ruoyi.framework.tech.jackson.config.JacksonAutoConfiguration,\
+  cn.chenzecheng.ruoyi.framework.tech.swagger.config.SwaggerAutoConfiguration,\
+  cn.chenzecheng.ruoyi.framework.tech.web.config.WebAutoConfiguration
