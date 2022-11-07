@@ -1,4 +1,4 @@
-package cn.chenzecheng.ruoyi.module.example.controller.admin.vo;
+package cn.chenzecheng.ruoyi.module.example.controller.admin.test.vo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

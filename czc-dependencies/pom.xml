@@ -190,11 +190,11 @@
             </dependency>
 
             <!-- DB 相关 -->
-            <!--            <dependency>
-                            <groupId>cn.iocoder.boot</groupId>
-                            <artifactId>yudao-spring-boot-starter-mybatis</artifactId>
-                            <version>${revision}</version>
-                        </dependency>-->
+            <dependency>
+                <groupId>cn.chenzecheng</groupId>
+                <artifactId>czc-spring-boot-starter-mybatis</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.alibaba</groupId>

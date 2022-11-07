@@ -1,9 +1,9 @@
-package cn.chenzecheng.ruoyi.module.example.controller.admin;
+package cn.chenzecheng.ruoyi.module.example.controller.admin.test;
 
 import cn.chenzecheng.ruoyi.common.pojo.CommonResult;
 import cn.chenzecheng.ruoyi.common.pojo.PageResult;
-import cn.chenzecheng.ruoyi.module.example.controller.admin.vo.TestReqVO;
-import cn.chenzecheng.ruoyi.module.example.controller.admin.vo.TestRespVO;
+import cn.chenzecheng.ruoyi.module.example.controller.admin.test.vo.TestReqVO;
+import cn.chenzecheng.ruoyi.module.example.controller.admin.test.vo.TestRespVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;

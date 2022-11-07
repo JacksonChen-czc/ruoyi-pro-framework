@@ -28,6 +28,10 @@
             <groupId>cn.chenzecheng</groupId>
             <artifactId>czc-spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.chenzecheng</groupId>
+            <artifactId>czc-spring-boot-starter-mybatis</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -18,5 +18,6 @@
     <modules>
         <module>czc-common</module>
         <module>czc-spring-boot-starter-web</module>
+        <module>czc-spring-boot-starter-mybatis</module>
     </modules>
 </project>
