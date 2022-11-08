@@ -22,7 +22,7 @@ import static cn.chenzecheng.ruoyi.common.pojo.CommonResult.success;
  */
 @Api(tags = "样例模块 - 测试api")
 @RestController
-@RequestMapping("/example/text")
+@RequestMapping("/example/test")
 @Validated
 @Slf4j
 public class TestController {

@@ -1,2 +1,2 @@
-### 请求 /example/text 接口 => 成功
-GET {{host}}/example/text
+### 请求 /example/test 接口 => 成功
+GET {{host}}/example/test
