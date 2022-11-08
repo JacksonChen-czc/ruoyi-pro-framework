@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.chenzecheng.ruoyi.framework.tech.redis.config.CacheAutoConfiguration,\
+  cn.chenzecheng.ruoyi.framework.tech.redis.config.RedisAutoConfiguration

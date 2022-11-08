@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>cn.chenzecheng</groupId>
+        <artifactId>czc-framework-tech</artifactId>
+        <version>${revision}</version>
+        <!-- 从本地查找父类，这样就不需要父工程提前打包 -->
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>czc-spring-boot-starter-redis</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>Redis 封装拓展</description>
+    <url>https://github.com/JacksonChen-czc/ruoyi-pro-framework</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.chenzecheng</groupId>
+            <artifactId>czc-common</artifactId>
+        </dependency>
+
+        <!-- DB 相关 -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId> <!-- 实现对 Caches 的自动化配置 -->
+        </dependency>
+
+        <!--        <dependency>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-all</artifactId> 不知道原作者加这个依赖干什么的？
+                </dependency>-->
+
+    </dependencies>
+
+</project>
