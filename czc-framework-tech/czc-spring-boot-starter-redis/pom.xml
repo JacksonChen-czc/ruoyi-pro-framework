@@ -35,10 +35,10 @@
             <artifactId>spring-boot-starter-cache</artifactId> <!-- 实现对 Caches 的自动化配置 -->
         </dependency>
 
-        <!--        <dependency>
-                    <groupId>io.netty</groupId>
-                    <artifactId>netty-all</artifactId> 不知道原作者加这个依赖干什么的？
-                </dependency>-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId> <!--不知道原作者加这个依赖干什么的？ 不加的话，启动后报错：远程主机强迫关闭了一个现有的连接。-->
+        </dependency>
 
     </dependencies>
 

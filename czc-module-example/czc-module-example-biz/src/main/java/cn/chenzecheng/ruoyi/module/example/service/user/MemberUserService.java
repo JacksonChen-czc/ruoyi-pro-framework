@@ -24,4 +24,11 @@ public interface MemberUserService {
      * @return 用户对象信息
      */
     MemberUserDO getUser(Long id);
+
+    /**
+     * 插入一个用户
+     * @param userDO
+     * @return
+     */
+    Long addUser(MemberUserDO userDO);
 }

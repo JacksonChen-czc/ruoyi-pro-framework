@@ -1,7 +1,9 @@
 package cn.chenzecheng.ruoyi.module.example.service.user;
 
+import cn.chenzecheng.ruoyi.framework.tech.datasource.core.enums.DataSourceEnum;
 import cn.chenzecheng.ruoyi.module.example.dal.dataobject.user.MemberUserDO;
 import cn.chenzecheng.ruoyi.module.example.dal.mysql.user.MemberUserMapper;
+import com.baomidou.dynamic.datasource.annotation.DS;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -28,9 +30,15 @@ public class MemberUserServiceImpl implements MemberUserService {
     }
 
     @Override
+    @DS(DataSourceEnum.SLAVE) // 从库查询
     public MemberUserDO getUser(Long id) {
         return memberUserMapper.selectById(id);
     }
 
-
+    @Override
+    @DS(DataSourceEnum.MASTER) // 主库插入
+    public Long addUser(MemberUserDO userDO) {
+        memberUserMapper.insert(userDO);
+        return userDO.getId();
+    }
 }
