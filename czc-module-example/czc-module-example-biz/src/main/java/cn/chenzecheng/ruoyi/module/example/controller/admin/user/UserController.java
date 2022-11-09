@@ -2,18 +2,14 @@ package cn.chenzecheng.ruoyi.module.example.controller.admin.user;
 
 import cn.chenzecheng.ruoyi.common.pojo.CommonResult;
 import cn.chenzecheng.ruoyi.module.example.api.user.dto.UserInfoDTO;
+import cn.chenzecheng.ruoyi.module.example.api.user.dto.UserRespDTO;
 import cn.chenzecheng.ruoyi.module.example.convert.user.UserConvert;
 import cn.chenzecheng.ruoyi.module.example.dal.dataobject.user.MemberUserDO;
 import cn.chenzecheng.ruoyi.module.example.service.user.MemberUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -34,6 +30,13 @@ public class UserController {
     public CommonResult<UserInfoDTO> getUserInfo(@PathVariable String tel) {
         MemberUserDO user = userService.getUserByMobile(tel);
         return CommonResult.success(UserConvert.INSTANCE.convertInfo(user));
+    }
+
+    @ApiOperation(value = "根据id获取用户信息", notes = "根据id获取用户基本信息的")
+    @GetMapping
+    public UserRespDTO getUser(Long id) {
+        MemberUserDO user = userService.getUser(id);
+        return UserConvert.INSTANCE.convertResp(user);
     }
 
     @ApiOperation(value = "用户新增", notes = "插入一个用户")

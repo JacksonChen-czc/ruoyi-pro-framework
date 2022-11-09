@@ -1,2 +1,17 @@
-### 请求 /example/user/{{tel}} 接口 => 成功
+### 请求 {{host}}/example/user/{{tel}}
 GET {{host}}/example/user/{{tel}}
+
+### 请求 {{host}}/example/user?id={{id}}
+GET {{host}}/example/user?id=7
+Accept: application/json
+
+### 请求 {{host}}/example/user
+PUT {{host}}/example/user
+Content-Type: application/json
+
+{
+  "mobile": "13580441793",
+  "status": "1",
+  "password": "123456",
+  "registerIp": "127.0.0.1"
+}

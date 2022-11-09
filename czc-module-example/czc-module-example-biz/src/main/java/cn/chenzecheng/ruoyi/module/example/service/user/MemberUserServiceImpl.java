@@ -30,13 +30,13 @@ public class MemberUserServiceImpl implements MemberUserService {
     }
 
     @Override
-    @DS(DataSourceEnum.SLAVE) // 从库查询
+    @DS(DataSourceEnum.SLAVE) // 读写分离，从库查询
     public MemberUserDO getUser(Long id) {
         return memberUserMapper.selectById(id);
     }
 
     @Override
-    @DS(DataSourceEnum.MASTER) // 主库插入
+    @DS(DataSourceEnum.MASTER) // 读写分离，主库插入
     public Long addUser(MemberUserDO userDO) {
         memberUserMapper.insert(userDO);
         return userDO.getId();
