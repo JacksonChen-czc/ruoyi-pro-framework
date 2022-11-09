@@ -10,7 +10,7 @@ import org.springframework.data.redis.serializer.RedisSerializer;
  * Redis 配置类
  */
 @Configuration
-public class RedisAutoConfiguration {
+public class MyRedisAutoConfiguration {
 
     /**
      * 创建 RedisTemplate Bean，使用 JSON 序列化方式

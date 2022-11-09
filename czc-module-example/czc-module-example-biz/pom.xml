@@ -36,6 +36,10 @@
             <groupId>cn.chenzecheng</groupId>
             <artifactId>czc-spring-boot-starter-redis</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.chenzecheng</groupId>
+            <artifactId>czc-spring-boot-starter-test</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

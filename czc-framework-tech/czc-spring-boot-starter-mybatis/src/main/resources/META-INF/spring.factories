@@ -1,5 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cn.chenzecheng.ruoyi.framework.tech.datasource.config.DataSourceAutoConfiguration,\
+  cn.chenzecheng.ruoyi.framework.tech.datasource.config.MyDataSourceAutoConfiguration,\
   cn.chenzecheng.ruoyi.framework.tech.mybatis.config.MybatisAutoConfiguration
 org.springframework.boot.env.EnvironmentPostProcessor=\
   cn.chenzecheng.ruoyi.framework.tech.mybatis.config.IdTypeEnvironmentPostProcessor

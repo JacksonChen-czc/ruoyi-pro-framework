@@ -25,6 +25,7 @@ public class MemberUserServiceImpl implements MemberUserService {
     private MemberUserMapper memberUserMapper;
 
     @Override
+    @DS(DataSourceEnum.SLAVE)
     public MemberUserDO getUserByMobile(String mobile) {
         return memberUserMapper.selectByMobile(mobile);
     }

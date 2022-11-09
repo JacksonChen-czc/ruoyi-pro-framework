@@ -346,12 +346,12 @@
             </dependency>
 
             <!-- Test 测试相关 -->
-            <!--            <dependency>
-                            <groupId>cn.iocoder.boot</groupId>
-                            <artifactId>yudao-spring-boot-starter-test</artifactId>
-                            <version>${revision}</version>
-                            <scope>test</scope>
-                        </dependency>-->
+            <dependency>
+                <groupId>cn.chenzecheng</groupId>
+                <artifactId>czc-spring-boot-starter-test</artifactId>
+                <version>${revision}</version>
+                <scope>test</scope>
+            </dependency>
 
             <dependency>
                 <groupId>org.mockito</groupId>
